@@ -274,7 +274,12 @@ class bars13_spawner_class //БАРС-13
         displayName = "Запрос техники";
         vehicles[] =
         {
-			{"Z_TAG_ASN_233115_STS",1,"true"}, //
+            {"Z_TAG_ASN_233115_STS",1,"true"}, //
+            {"V_TAG_ASN_233115_kmf",1,"true"}, //
+            {"av_UAZ33451",1,"true"}, //
+            {"NORD_BRDM2_RU",1,"true"}, //
+            {"V_TAG_btr80",1,"true"}, //
+            {"rhs_bmp3_msv",1,"true"} //
         };
         spawnPoints[] =
         {
