@@ -24,7 +24,7 @@ zeusmodule = [
 	"76561198945160381" /// Джамшут
 ];
 if (!(_playerUID in zeusmodule)) exitwith {};
-if ((side player != civilian) && (_playerUID != "76561198432363921") && (_playerUID != "76561198284004882") && (_playerUID != "76561199002226480") && (_playerUID !="76561198135788033") && (_playerUID != "76561198047690862") && (_playerUID != "76561199287760678")) exitwith {};
+if ((side player != civilian) && (_playerUID != "76561198432363921") && (_playerUID != "76561198284004882") && (_playerUID != "76561199002226480") && (_playerUID !="76561198135788033") && (_playerUID != "76561198047690862")) exitwith {};
 
 _index = zeusmodule find _playerUID;
 _dedman = format["dedman%1", _index];
