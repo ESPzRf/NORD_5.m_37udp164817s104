@@ -43,11 +43,6 @@ handleShootSafeZone = player addEventHandler ["Fired", {
     };
 }] call CBA_fnc_addEventHandler;
 
-["ace_firedPlayerVehicleNonLocal", {
-    if ((_unit inArea nfz_1) or (_unit inArea nfz_2)) then {
-        deleteVehicle _projectile;
-        if (_unit == _unit) then {
-            endMission "shoot";
-        };
-    };
+["ace_rearm_sourceInitalized", {
+    [ammo_truck, 10000] call ace_rearm_fnc_setSupplyCount;
 }] call CBA_fnc_addEventHandler;
