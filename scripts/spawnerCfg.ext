@@ -425,7 +425,13 @@ class artan_spawner_class //Артан
 			{"UF_m1151_MK19",1,"true"}, //
 			{"landcruiser_ukr_krest",1,"true"}, //
 			{"tahoe_ukr_krest",1,"true"}, //
-			{"buggy_ukr",1,"true"} //
+			{"buggy_ukr",1,"true"}, //
+			{"t72bd_ukr_krest",1,"true"}, // signum tehnika otsuda
+			{"m113_ukr_krest",1,"true"}, //
+			{"hmmwv_pickup_ukr_krest",1,"true"}, //
+			{"b_afougf_uaf_novator",1,"true"}, //
+			{"tundra_ukr_krest",1,"true"}, //
+			{"nord_uaz452b_zsu",1,"true"} //
         };
         spawnPoints[] =
         {
