@@ -330,8 +330,7 @@ class common_psu_spawner_class //ПСУ
         };
         spawnPoints[] =
         {
-            {"1",{"vsu_spawnplace_1"}},
-			{"2",{"vsu_spawnplace_2"}}
+            {"1",{"vsu_spawnplace_1"}}
         };
         
     };
