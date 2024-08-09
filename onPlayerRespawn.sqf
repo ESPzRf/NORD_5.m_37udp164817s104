@@ -1,2 +1,2 @@
 player removeAllEventHandlers "HIT";
-[] execVM "sherpa_scripts\ini_zeus.sqf";
+[] execVM "scripts\zeus\curator.sqf";
