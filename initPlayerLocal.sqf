@@ -17,7 +17,6 @@ waitUntil{local player};
 if(!hasInterface) exitWith {}; // If headless then exit
 
 [] execVM "intro\introtext.sqf";
-[] execVM "sherpa_scripts\ini_zeus.sqf";
 [] execVM "onPlayerConnected.sqf";
 [] execVM "sherpa_scripts\ini_safeZone.sqf";
 0 spawn {[] execVM "sherpa_scripts\ini_arsenalRestrict.sqf"};
