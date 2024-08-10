@@ -7,12 +7,12 @@ class common_rf_spawner_class //общий рф
         displayName = "Общий запрос техники";
         vehicles[] =
         {
-            {"rhs_2b14_82mm_vdv",1,"true"},
+            {"rhs_2b14_82mm_vdv",2,"true"},
 			{"RHS_Ural_Zu23_VV_01",1,"true"},
 			{"Z_TAG_ural432031",2,"true"},
 			{"RHS_Ural_Fuel_VV_01",1,"true"},
 			{"Z_TAG_mtoat",1,"true"},
-			{"rhssaf_army_o_d30",1,"true"},
+			{"tbd_120mm_pm_43",1,"true"},
 			{"LAV_MSTA_red",1,"true"},
             {"CUP_O_MTLB_pk_Green_RU",2,"true"},
             {"MMM_BTRD_r",3,"true"},
@@ -295,12 +295,12 @@ class common_vsu_spawner_class //общий всу
         displayName = "Общий запрос техники";
         vehicles[] =
         {
-            {"rhs_2b14_82mm_vdv",1,"true"},
+            {"rhs_2b14_82mm_vdv",2,"true"},
             {"b_afougf_gaz66_zu23",1,"true"},
             {"b_afougf_kraz255b1_fuel",1,"true"},
             {"RHS_Ural_Repair_VDV_01",1,"true"},
             {"RHS_Ural_Ammo_MSV_01",1,"true"},
-			{"rhssaf_army_o_d30",1,"true"},
+			{"tbd_120mm_pm_43",1,"true"},
             {"LAV_MSTA_blue",1,"true"},
             {"CUP_O_MTLB_pk_Green_RU",5,"true"},
             {"ural_ukr_krest",10,"true"},
