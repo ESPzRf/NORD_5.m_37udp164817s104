@@ -12,7 +12,7 @@ class common_rf_spawner_class //общий рф
 			{"Z_TAG_ural432031",2,"true"},
 			{"RHS_Ural_Fuel_VV_01",1,"true"},
 			{"Z_TAG_mtoat",1,"true"},
-			{"tbd_120mm_pm_43",1,"true"},
+			{"tbd_120mm_pm_43",2,"true"},
 			{"LAV_MSTA_red",1,"true"},
             {"CUP_O_MTLB_pk_Green_RU",2,"true"},
             {"MMM_BTRD_r",3,"true"},
@@ -85,6 +85,7 @@ class logistic_rf_spawner_class //ящики рф
 			{"tbd_mortars_100mm_box_heat",-1,"true"},
 			{"ACE_Track",-1,"true"},
 			{"ACE_Wheel",-1,"true"},
+			{"tbd_mortar_120mm_box",-1,"true"},
 			{"tbd_mortars_100mm_box_he",-1,"true"}
         };
         spawnPoints[] =
@@ -299,8 +300,8 @@ class common_vsu_spawner_class //общий всу
             {"b_afougf_gaz66_zu23",1,"true"},
             {"b_afougf_kraz255b1_fuel",1,"true"},
             {"RHS_Ural_Repair_VDV_01",1,"true"},
-            {"RHS_Ural_Ammo_MSV_01",1,"true"},
-			{"tbd_120mm_pm_43",1,"true"},
+            {"RHS_Ural_Ammo_MSV_01",2,"true"},
+			{"tbd_120mm_pm_43",2,"true"},
             {"LAV_MSTA_blue",1,"true"},
             {"CUP_O_MTLB_pk_Green_RU",5,"true"},
             {"ural_ukr_krest",10,"true"},
@@ -389,6 +390,7 @@ class logistic_vsu_spawner_class //ящики всу
 			{"tbd_mortars_100mm_box_heat",-1,"true"},
 			{"ACE_Track",-1,"true"},
 			{"ACE_Wheel",-1,"true"},
+			{"tbd_mortar_120mm_box",-1,"true"},
 			{"tbd_mortars_100mm_box_he",-1,"true"}
         };
         spawnPoints[] =
