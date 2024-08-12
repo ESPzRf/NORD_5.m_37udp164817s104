@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=30116;
+		nextID=30118;
 	};
 	class MarkerIDProvider
 	{
@@ -24,10 +24,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={10086.407,253.63106,1251.8945};
-		dir[]={-0.22713973,-0.58862317,-0.77589333};
-		up[]={-0.16538073,0.80839336,-0.56492662};
-		aside[]={-0.9597587,1.44355e-08,0.28096229};
+		pos[]={10041.808,229.28789,1203.7949};
+		dir[]={0.18273392,-0.44225383,-0.87808073};
+		up[]={0.090105683,0.8968882,-0.43297854};
+		aside[]={-0.97902691,-6.2806066e-08,-0.20374145};
 	};
 };
 binarizationWanted=0;
@@ -31483,7 +31483,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[[[[""RPG_30K""],[10]],[[""RPG_30K_MAG"",""rhs_mine_pmn2_mag"",""rhs_mine_tm62m_mag""],[10,100,50]],[[],[]],[[],[]]],false]";
+							value="[[[[""RPG_30K"",""Verba_9k333""],[10,5]],[[""RPG_30K_MAG"",""rhs_mine_pmn2_mag"",""rhs_mine_tm62m_mag"",""9m336""],[10,100,50,5]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -54136,7 +54136,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5535.7026,217.58383,5423.1167};
-				angles[]={0,4.6931725,0};
+				angles[]={0,4.6931686,0};
 			};
 			side="Empty";
 			flags=5;
@@ -54283,7 +54283,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5614.915,217.61031,5424.6123};
-				angles[]={0,4.6931725,0};
+				angles[]={0,4.6931686,0};
 			};
 			side="Empty";
 			flags=5;
@@ -54730,7 +54730,6 @@ class Mission
 			flags=1;
 			class Attributes
 			{
-				createAsLocalObject=1;
 				disableSimulation=1;
 			};
 			id=15414;
@@ -54821,7 +54820,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5683.2832,226.38142,5579.8188};
+				position[]={5683.2827,226.38116,5579.8193};
 				angles[]={0,4.6658235,0};
 			};
 			side="Empty";
@@ -54833,7 +54832,7 @@ class Mission
 			};
 			id=15416;
 			type="BridgeWooden_01";
-			atlOffset=-10.718994;
+			atlOffset=-10.719254;
 			class CustomAttributes
 			{
 				class Attribute0
