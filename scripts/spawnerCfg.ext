@@ -17,6 +17,7 @@ class common_rf_spawner_class //общий рф
             {"CUP_O_MTLB_pk_Green_RU",2,"true"},
             {"MMM_BTRD_r",3,"true"},
             {"rhs_kamaz5350_vmf",10,"true"},
+            {"MMM_Mi8AMTSh_Unrmed",1,"true"},
             {"V_TAG_ASN_233115_kmf",3,"true"}
 		};
         spawnPoints[] =
@@ -305,6 +306,7 @@ class common_vsu_spawner_class //общий всу
             {"LAV_MSTA_blue",1,"true"},
             {"CUP_O_MTLB_pk_Green_RU",5,"true"},
             {"ural_ukr_krest",10,"true"},
+            {"b_afougf_Mi8MTV3_Evac200",1,"true"},
             {"rhsusf_m998_w_4dr_halftop",3,"true"}
         };
         spawnPoints[] =
