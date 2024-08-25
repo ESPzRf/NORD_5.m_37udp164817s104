@@ -51,7 +51,7 @@ class CfgDiscordRichPresence {
 
 class CfgGradPersistence {
     missionTag = "Korsac_Nord_mission";
-    loadOnMissionStart = 0  ;
+    loadOnMissionStart = 1  ;
     missionWaitCondition = "true";
     playerWaitCondition = "true";
     playerWaitConditionLocal = "true";

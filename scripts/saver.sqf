@@ -2,6 +2,7 @@ loop_saving = [] spawn {
 	while { true } do {
 		if (save_var_hohol == 1) then {
 			[false, 0] call grad_persistence_fnc_saveMission;
+			systemChat "Сохранено";
 		} else {};
 		if (clean_var_hohol == 1) then {
 			{
