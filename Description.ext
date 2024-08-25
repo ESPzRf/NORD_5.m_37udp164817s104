@@ -51,9 +51,10 @@ class CfgDiscordRichPresence {
 
 class CfgGradPersistence {
     missionTag = "Korsac_Nord_mission";
-    loadOnMissionStart = 0;
+    loadOnMissionStart = 0  ;
     missionWaitCondition = "true";
     playerWaitCondition = "true";
+    playerWaitConditionLocal = "true";
 
     //пресет для полного сохранения
     saveUnits = 3;
@@ -65,9 +66,9 @@ class CfgGradPersistence {
     saveTasks = 3;
     saveTriggers = 3;
 
-    savePlayerInventory = 0;
-    savePlayerDamage = 0;
-    savePlayerPosition = 0;
+    savePlayerInventory = 3;
+    savePlayerDamage = 3;
+    savePlayerPosition = 3;
     savePlayerMoney = 0;
 
     //пресет для сохранения только денег
@@ -100,16 +101,6 @@ class CfgGradPersistence {
         };
         class ace_medical_bodyPartStatus {
             varName = "ace_medical_bodyPartStatus";
-            varNamespace = "player";
-            public = 0;
-        };
-        class grad_lbm_myFunds {
-            varName = "grad_lbm_myFunds";
-            varNamespace = "player";
-            public = 1;
-        };
-        class shopItems {
-            varName = "shopItems";
             varNamespace = "player";
             public = 0;
         };
