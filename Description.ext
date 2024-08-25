@@ -66,9 +66,9 @@ class CfgGradPersistence {
     saveTasks = 3;
     saveTriggers = 3;
 
-    savePlayerInventory = 3;
-    savePlayerDamage = 3;
-    savePlayerPosition = 3;
+    savePlayerInventory = 1;
+    savePlayerDamage = 1;
+    savePlayerPosition = 1;
     savePlayerMoney = 0;
 
     //пресет для сохранения только денег
