@@ -4,20 +4,17 @@
 
 if (!isServer) exitWith {};
 
-systemChat "loading player";
-
 private _fnc_onPlayerConnected = {
     params ["_id","_uid","_name","_didJIP"];
-    systemChat "loading player1";
+
     if (!_didJIP) exitWith {};
     if (_uid == "") exitWith {ERROR_1("Player %1 does not have a UID!?",_name)};
-    systemChat "loading player2";
+
     _waitCondition = [missionConfigFile >> "CfgGradPersistence", "missionWaitCondition", ""] call BIS_fnc_returnConfigEntry;
     if (_waitCondition == "") then {_waitCondition = "true"};
-    systemChat "loading playe3";
     [{!isNull ([_this select 0] call BIS_fnc_getUnitByUID) && {call compile (_this select 1)}}, {
         params ["_uid","_waitCondition"];
-        systemChat "loading player4";
+
         _unit = [_uid] call BIS_fnc_getUnitByUID;
         if !(_unit isKindOf "Man") exitWith {};
 
@@ -25,9 +22,8 @@ private _fnc_onPlayerConnected = {
         _savePlayerDamage = ([missionConfigFile >> "CfgGradPersistence", "savePlayerDamage", 0] call BIS_fnc_returnConfigEntry) == 1;
         _savePlayerPosition = ([missionConfigFile >> "CfgGradPersistence", "savePlayerPosition", 0] call BIS_fnc_returnConfigEntry) == 1;
         _savePlayerMoney = ([missionConfigFile >> "CfgGradPersistence", "savePlayerMoney", 1] call BIS_fnc_returnConfigEntry) == 1;
-        systemChat "loading player5";
+
         if (_savePlayerInventory || _savePlayerDamage || _savePlayerPosition || _savePlayerMoney) then {
-            systemChat "loading player6";
             INFO_1("Loading JIP player %1",name _unit);
             [_unit,_savePlayerInventory,_savePlayerDamage,_savePlayerPosition,_savePlayerMoney] call grad_persistence_fnc_loadPlayer;
         };

@@ -70,5 +70,3 @@ addMissionEventHandler ["EntityKilled", {
 		missionNamespace setVariable [(getDescription _unit) select 0, class - 1];
 	};
 }];
-
-addMissionEventHandler ["HandleDisconnect", { false }];
