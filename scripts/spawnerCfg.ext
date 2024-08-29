@@ -328,7 +328,7 @@ class common_psu_spawner_class //ПСУ
         {
             {"b_afougf_Mi8MTV3_Cargo",2,"true"},
             {"mi24_ukr_v_23mm_bez_pturov",1,"true"},
-            {"UAF_Mi8MTV3_vvs",1,"true"}
+            {"mi8_ukr_mtv3",1,"true"}
 
         };
         spawnPoints[] =
