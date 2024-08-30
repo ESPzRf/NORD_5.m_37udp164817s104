@@ -90,13 +90,14 @@ if (_savePlayerInventory) then {
 };
 
 if (_savePlayerDamage) then {
-    if (player getVariable ["ACE_isUnconscious",false]) then 
-    {
-        [_unitDataHash,"damage",true] call CBA_fnc_hashSet;
-    }
-    else
-    {
+    if (player getVariable ["ACE_isUnconscious",true]) then  
+    { 
+        [_unitDataHash,"uncon",true] call CBA_fnc_hashSet;
+    } 
+    else 
+    { 
         private _damage = [_unit] call ace_medical_fnc_serializeState;
+        [_unitDataHash,"uncon",false] call CBA_fnc_hashSet;
         [_unitDataHash,"damage",_damage] call CBA_fnc_hashSet;
     };
 };

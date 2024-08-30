@@ -25,6 +25,7 @@ private _fnc_waitUntil = {
 
     private _uid = getPlayerUID _unit;
     if (_uid == "") exitWith {ERROR_1("UID for player %1 not found.",name _unit)};
+    if ([_unitDataHash, "uncon"] call CBA_fnc_hashGet) exitWith {ERROR_1("Player %1 exited unconscious.",name _unit)};
 
     private _unitDataHash = [_playersDataHash,_uid] call CBA_fnc_hashGet;
     if (_unitDataHash isEqualType false) exitWith {INFO_1("Data for player %1 not found.",name _unit)};
@@ -37,15 +38,8 @@ private _fnc_waitUntil = {
     };
 
     if (_savePlayerDamage) then {
-        if (player getVariable ["ACE_isUnconscious",false]) then 
-        {
-            _unit setDamage 1;
-        }
-        else
-        {
-            private _unitHits = [_unitDataHash,"damage"] call CBA_fnc_hashGet;
-            [_unit, _unitHits] remoteExec ["ace_medical_fnc_deserializeState", _unit]
-        };
+        private _unitHits = [_unitDataHash,"damage"] call CBA_fnc_hashGet;
+        [_unit, _unitHits] remoteExec ["ace_medical_fnc_deserializeState", _unit]
     };
 
     if (_savePlayerPosition) then {
