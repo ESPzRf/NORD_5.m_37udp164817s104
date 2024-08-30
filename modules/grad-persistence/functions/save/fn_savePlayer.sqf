@@ -31,7 +31,7 @@ if (isNil "_uid") then {
 };
 if (_uid == "") exitWith {};
 
-if (!([player] call ace_common_fnc_isAwake)) exitWith  
+if (!([_unit] call ace_common_fnc_isAwake)) exitWith  
 { 
     [_playersDataHash,_uid,false] call CBA_fnc_hashSet;
     saveProfileNamespace;
