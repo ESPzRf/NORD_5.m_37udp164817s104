@@ -31,6 +31,12 @@ if (isNil "_uid") then {
 };
 if (_uid == "") exitWith {};
 
+if (player getVariable ["ACE_isUnconscious",true]) exitWith  
+{ 
+    [_playersDataHash,_uid,false] call CBA_fnc_hashSet;
+    saveProfileNamespace;
+}; 
+
 private _unitDataHash = [[],false] call CBA_fnc_hashCreate;
 
 if (_savePlayerInventory) then {
@@ -90,16 +96,8 @@ if (_savePlayerInventory) then {
 };
 
 if (_savePlayerDamage) then {
-    if (player getVariable ["ACE_isUnconscious",true]) then  
-    { 
-        [_unitDataHash,"uncon",true] call CBA_fnc_hashSet;
-    } 
-    else 
-    { 
-        private _damage = [_unit] call ace_medical_fnc_serializeState;
-        [_unitDataHash,"uncon",false] call CBA_fnc_hashSet;
-        [_unitDataHash,"damage",_damage] call CBA_fnc_hashSet;
-    };
+    private _damage = [_unit] call ace_medical_fnc_serializeState;
+    [_unitDataHash,"damage",_damage] call CBA_fnc_hashSet;
 };
 
 if (_savePlayerPosition) then {
