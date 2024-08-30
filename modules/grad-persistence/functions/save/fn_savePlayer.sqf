@@ -35,6 +35,7 @@ if (player getVariable ["ACE_isUnconscious",true]) exitWith
 { 
     [_playersDataHash,_uid,false] call CBA_fnc_hashSet;
     saveProfileNamespace;
+    ERROR_1("not_saving");
 }; 
 
 private _unitDataHash = [[],false] call CBA_fnc_hashCreate;
