@@ -25,7 +25,8 @@ private _fnc_waitUntil = {
 
     private _uid = getPlayerUID _unit;
     if (_uid == "") exitWith {ERROR_1("UID for player %1 not found.",name _unit)};
-    if ([_unitDataHash, "uncon"] call CBA_fnc_hashGet) exitWith {ERROR_1("Player %1 exited unconscious.",name _unit)};
+    private _uncon = [_unitDataHash, "uncon"] call CBA_fnc_hashGet;
+    if (_uncon) exitWith {ERROR_1("Player %1 exited unconscious.",name _unit)};
 
     private _unitDataHash = [_playersDataHash,_uid] call CBA_fnc_hashGet;
     if (_unitDataHash isEqualType false) exitWith {INFO_1("Data for player %1 not found.",name _unit)};
