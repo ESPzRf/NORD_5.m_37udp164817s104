@@ -31,7 +31,7 @@ if (isNil "_uid") then {
 };
 if (_uid == "") exitWith {};
 
-if (player getVariable ["ACE_isUnconscious",true]) exitWith  
+if (_unit getVariable ["ACE_isUnconscious",true]) exitWith  
 { 
     [_playersDataHash,_uid,false] call CBA_fnc_hashSet;
     saveProfileNamespace;
