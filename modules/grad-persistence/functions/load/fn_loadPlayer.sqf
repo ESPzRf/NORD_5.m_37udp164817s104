@@ -37,8 +37,15 @@ private _fnc_waitUntil = {
     };
 
     if (_savePlayerDamage) then {
-        private _unitHits = [_unitDataHash,"damage"] call CBA_fnc_hashGet;
-        [_unit, _unitHits] remoteExec ["ace_medical_fnc_deserializeState", _unit]
+        if (player getVariable ["ACE_isUnconscious",false]) then 
+        {
+            _unit setDamage 1;
+        }
+        else
+        {
+            private _unitHits = [_unitDataHash,"damage"] call CBA_fnc_hashGet;
+            [_unit, _unitHits] remoteExec ["ace_medical_fnc_deserializeState", _unit]
+        };
     };
 
     if (_savePlayerPosition) then {
